@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kaithi Script Translator</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Noto+Sans+Devanagari:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="background-blobs">
+        <div class="blob blob-1"></div>
+        <div class="blob blob-2"></div>
+    </div>
+
+    <div class="container">
+        <header>
+            <h1>कैथी <span class="accent">Kaithi</span> Translator</h1>
+            <p>Bridging history with modern Devanagari using Neural Networks</p>
+        </header>
+
+        <main>
+            <div class="translator-card">
+                <div class="mode-selector">
+                    <button id="btn-k2h" class="active">Kaithi → Hindi</button>
+                    <button id="btn-h2k">Hindi → Kaithi</button>
+                </div>
+
+                <div class="translation-grid">
+                    <div class="input-section">
+                        <label id="input-label">Kaithi Script</label>
+                        <textarea id="input-text" placeholder="Paste Kaithi script here..."></textarea>
+                    </div>
+
+                    <div class="divider">
+                        <div class="arrow">→</div>
+                    </div>
+
+                    <div class="output-section">
+                        <label id="output-label">Hindi (Devanagari)</label>
+                        <div id="output-text" class="output-display">Translation will appear here...</div>
+                        <button id="copy-btn" title="Copy to clipboard">
+                            <svg viewBox="0 0 24 24" width="18" height="18"><path fill="currentColor" d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"/></svg>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="action-bar">
+                    <button id="translate-btn">Translate</button>
+                </div>
+            </div>
+        </main>
+
+        <footer>
+            <p>Historical Script Preservation Project</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

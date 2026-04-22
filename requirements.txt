@@ -1,2 +1,5 @@
 torch
 pandas
+fastapi
+uvicorn
+jinja2

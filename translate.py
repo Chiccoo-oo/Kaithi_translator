@@ -57,7 +57,8 @@ def translate(text):
     return decode(pred)
 
 
-# Loop
-while True:
-    kaithi_input = input("Enter Kaithi: ")
-    print("Hindi:", translate(kaithi_input))
+if __name__ == "__main__":
+    # Loop
+    while True:
+        kaithi_input = input("Enter Kaithi: ")
+        print("Hindi:", translate(kaithi_input))
