@@ -30,3 +30,5 @@ Thumbs.db
 # Dataset
 data/
 datasets/
+
+dataset.csv
